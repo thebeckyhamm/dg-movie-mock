@@ -11,6 +11,6 @@ http://www.omdbapi.com/?s=Batman
 Take those results and look up details for each movie returned using this api pattern:
 http://www.omdbapi.com/?i=tt0372784 (where i = the imdb id found above)
 
-Build using Angular.js version [1.2.18](https://codeload.github.com/angular/angular.js/zip/v1.2.18) (with at least one Directive) and SASS compiled to CSS.
+Build using Angular.js version [1.2.18](https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js) (with at least one Directive) and SASS compiled to CSS.
 
 Fork this project and include your code in a pull request.
