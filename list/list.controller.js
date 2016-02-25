@@ -24,9 +24,9 @@
                     return movieDetails.getMovieDetails(result)
                 }).
                 then( function( result) {
+                    console.log(result);
                     vm.movies = result;
                 })
-        
         }
 
         getMovies();

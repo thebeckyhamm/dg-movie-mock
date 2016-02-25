@@ -11,20 +11,20 @@
                 <img src="http://placehold.it/100x150" alt="">
             </div>
             <div class="media__content"> 
-                <h2 class="media__title">{{ movie.data.Title }}</h2>
+                <h2 class="media__title">{{ movie.Title }}</h2>
                 <div class="media__meta clearfix">
                     <span class="pull-left">
-                        <span class="rating">PG-13</span>
-                         &nbsp;140 min
+                        <span class="rating">{{ movie.Rated }}</span>
+                         &nbsp;{{ movie.Runtime }}
                     </span>
-                    <span class="pull-right">15 Jun 2005</span>
+                    <span class="pull-right">{{ movie.Released }}</span>
 
                 </div>
                 <div class="media__desc">
-                    <p>After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.</p>
+                    <p>{{ movie.Plot }}</p>
                 </div>
                 <div class="clearfix">
-                    <button class="btn btn--primary btn--large pull-right">View on IMBD</button>
+                    <a href="http://www.imdb.com/title/{{ movie.imdbID }}"class="btn btn--primary btn--large pull-right">View on IMBD</a>
                 </div>
 
             </div>

@@ -20,13 +20,12 @@
 
             var movieDetails = [];
 
-
-            function testing(response) {
-                console.log(response);
-            }
              _.each(data, function(m, i) {
                 movieDetails.push(
                     $http.get(url + "?i=" + m)
+                        .then( function(result) {
+                            return result.data;
+                        })
                 );
 
             });
