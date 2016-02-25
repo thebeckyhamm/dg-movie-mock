@@ -13,29 +13,5 @@
             </button>
         </div>           
     </div>
-    <article class="list__item" ng-repeat="movie in vm.filteredMovies">
-        <div class="media clearfix">
-            <div class="media__img">
-                <img src="http://placehold.it/100x150" alt="">
-            </div>
-            <div class="media__content"> 
-                <h2 class="media__title">{{ movie.Title }}</h2>
-                <div class="media__meta clearfix">
-                    <span class="pull-left">
-                        <span class="rating">{{ movie.Rated }}</span>
-                         &nbsp;{{ movie.Runtime }}
-                    </span>
-                    <span class="pull-right">{{ movie.Released }}</span>
-
-                </div>
-                <div class="media__desc">
-                    <p>{{ movie.Plot }}</p>
-                </div>
-                <div class="clearfix">
-                    <a href="http://www.imdb.com/title/{{ movie.imdbID }}"class="btn btn--primary btn--large pull-right">View on IMBD</a>
-                </div>
-
-            </div>
-        </div>
-    </article>
+    <movie-tile ng-repeat="movie in vm.filteredMovies"></movie-tile>
 </section>
