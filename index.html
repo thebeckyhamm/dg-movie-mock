@@ -20,8 +20,9 @@
 <body ng-app="dgMovieApp">
 
 <div class="wrapper">
-    <section class="list">
+    <section class="list" ng-controller="ListController as vm">
         <div class="clearfix">
+        {{ vm.hello }}
              <div class="btn-group pull-right">
                  <button class="btn btn--toggle">2000's</button>
                  <button class="btn">1990's</button>
@@ -65,5 +66,6 @@
 <![endif]-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js"></script>
 <script src="scripts/app.js"></script>
+<script src="list/list.controller.js"></script>
 </body>
 </html>
