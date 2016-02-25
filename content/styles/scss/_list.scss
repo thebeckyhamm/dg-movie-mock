@@ -5,7 +5,8 @@
 
 .list__item {
     background-color: $main-bg; 
-    border: 2px solid $border-color;
+    border: 2px solid $border-light-color;
+    border-radius: 10px;
     margin: 2rem 0;
     padding: 1rem;
 }

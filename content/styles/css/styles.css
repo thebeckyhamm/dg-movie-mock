@@ -363,6 +363,7 @@ th {
 
 html {
   box-sizing: border-box;
+  color: #303436;
   font-family: "Open Sans", Arial, sans-serif; }
 
 *, *:before, *:after {
@@ -372,10 +373,14 @@ html {
   margin: 5rem auto;
   max-width: 700px; }
 
+h1, h2, h3, h4, h5 {
+  margin-top: 0; }
+
 .btn {
   background: none;
   background-color: #F7F8F9;
   border: 1px solid #C2CAD0;
+  color: #61696E;
   border-radius: 4px;
   padding: .5rem 1.5rem;
   -webkit-appearance: none; }
@@ -406,6 +411,33 @@ html {
 
 .list__item {
   background-color: #E8EBEE;
-  border: 2px solid #303436;
+  border: 2px solid #61696E;
+  border-radius: 10px;
   margin: 2rem 0;
   padding: 1rem; }
+
+.media__img {
+  float: left;
+  padding: 0 1rem 1rem 0;
+  width: 20%; }
+  .media__img img {
+    border-radius: 8px; }
+
+.media__content {
+  float: left;
+  width: 80%; }
+
+.media__title {
+  border-bottom: 1px solid #61696E;
+  margin-bottom: .25rem; }
+
+.media__meta {
+  font-size: .9rem; }
+
+.rating {
+  border: 1px solid #61696E;
+  border-radius: 5px;
+  color: #61696E;
+  font-family: "Courier";
+  font-size: .9rem;
+  padding: .1em .25em; }

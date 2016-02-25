@@ -1,0 +1,36 @@
+/////////////////////////////
+// Media
+/////////////////////////////
+
+.media__img {
+    float: left;
+    padding: 0 1rem 1rem 0;
+    width: 20%;
+    img {
+        border-radius: 8px;
+    }
+}
+
+.media__content {
+    float: left;
+    width: 80%;
+}
+
+.media__title {
+    border-bottom: 1px solid $border-light-color;
+    margin-bottom: .25rem;
+}
+
+.media__meta {
+    font-size: .9rem;
+}
+
+
+.rating {
+    border: 1px solid $border-light-color;
+    border-radius: 5px;
+    color: $text-light-color;
+    font-family: "Courier";
+    font-size: .9rem;
+    padding: .1em .25em;
+}
