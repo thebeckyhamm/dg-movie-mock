@@ -1,0 +1,12 @@
+/////////////////////////////
+// Base
+/////////////////////////////
+
+html {
+    box-sizing: border-box;
+    font-family: $font-family; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
