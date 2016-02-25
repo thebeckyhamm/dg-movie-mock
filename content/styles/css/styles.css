@@ -381,8 +381,10 @@ h1, h2, h3, h4, h5 {
   background-color: #F7F8F9;
   border: 1px solid #C2CAD0;
   color: #61696E;
+  display: inline-block;
   border-radius: 4px;
   padding: .5rem 1.5rem;
+  text-decoration: none;
   -webkit-appearance: none; }
 
 .btn-group .btn {
