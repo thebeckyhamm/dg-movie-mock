@@ -20,40 +20,8 @@
 <body ng-app="dgMovieApp">
 
 <div class="wrapper">
-    <section class="list" ng-controller="ListController as vm">
-        <div class="clearfix">
-        {{ vm.hello }}
-             <div class="btn-group pull-right">
-                 <button class="btn btn--toggle">2000's</button>
-                 <button class="btn">1990's</button>
-             </div>           
-        </div>
-        <article class="list__item">
-            <div class="media clearfix">
-                <div class="media__img">
-                    <img src="http://placehold.it/100x150" alt="">
-                </div>
-                <div class="media__content"> 
-                    <h2 class="media__title">Batman Begins</h2>
-                    <div class="media__meta clearfix">
-                        <span class="pull-left">
-                            <span class="rating">PG-13</span>
-                             &nbsp;140 min
-                        </span>
-                        <span class="pull-right">15 Jun 2005</span>
+    <div ui-view></div>
 
-                    </div>
-                    <div class="media__desc">
-                        <p>After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.</p>
-                    </div>
-                    <div class="clearfix">
-                        <button class="btn btn--primary btn--large pull-right">View on IMBD</button>
-                    </div>
-
-                </div>
-            </div>
-        </article>
-    </section>
 </div>
 
 
@@ -65,6 +33,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <![endif]-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
 <script src="scripts/app.js"></script>
 <script src="list/list.controller.js"></script>
 </body>
