@@ -355,10 +355,23 @@ th {
 
 html {
   box-sizing: border-box;
-  font-family: '"Open Sans", Arial, sans-serif'; }
+  font-family: "Open Sans", Arial, sans-serif; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.wrapper {
+  margin: 5rem auto;
+  max-width: 700px; }
+
+.btn {
+  background: none;
+  background-color: #F7F8F9;
+  border: 1px solid #C2CAD0;
+  border-radius: 4px;
+  padding: .5rem 1rem;
+  -webkit-appearance: none; }
+
 .list__item {
-  background-color: #E8EBEE; }
+  background-color: #E8EBEE;
+  border: 2px solid #303436; }

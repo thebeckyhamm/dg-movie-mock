@@ -3,5 +3,10 @@
 /////////////////////////////
 
 .btn {
-    
+    background: none;
+    background-color: $btn-default-bg;
+    border: 1px solid $btn-default-border;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    -webkit-appearance: none;
 }
