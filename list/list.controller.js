@@ -7,23 +7,30 @@
         .controller('ListController', ListController);
 
 
-    function ListController(movies) {
+    function ListController(movieIDs, movieDetails) {
         var vm = this;
-        vm.movies = []
+        vm.movies = [];
+        vm.movieIDs = [];
 
 
         function getMovies() {
-            return movies.getMovies()
-                .then( function(data) {
-                    vm.movies = data;
-                    console.log(vm.movies);
-                    return vm.movies;
-                });
+
+            var IDs = movieIDs.getMovieIDs();
+
+            IDs
+                .then(function (result) {
+                    vm.movieIDs = result;
+
+                    return movieDetails.getMovieDetails(result)
+                }).
+                then( function( result) {
+                    vm.movies = result;
+                })
+        
         }
 
         getMovies();
-        
-    }
+}
 
 
 })();

@@ -16,5 +16,8 @@ var dgMovieApp =
                     controllerAs: 'vm'
                 })
                 
-        });
+        })
+        .constant('_',
+            window._
+        );
 

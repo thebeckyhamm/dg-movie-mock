@@ -1,18 +1,17 @@
 <section class="list">
     <div class="clearfix">
-    {{ vm.hello }}
          <div class="btn-group pull-right">
              <button class="btn btn--toggle">2000's</button>
              <button class="btn">1990's</button>
          </div>           
     </div>
-    <article class="list__item">
+    <article class="list__item" ng-repeat="movie in vm.movies">
         <div class="media clearfix">
             <div class="media__img">
                 <img src="http://placehold.it/100x150" alt="">
             </div>
             <div class="media__content"> 
-                <h2 class="media__title">Batman Begins</h2>
+                <h2 class="media__title">{{ movie.data.Title }}</h2>
                 <div class="media__meta clearfix">
                     <span class="pull-left">
                         <span class="rating">PG-13</span>
