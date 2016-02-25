@@ -9,8 +9,20 @@
 
     function ListController(movies) {
         var vm = this;
+        vm.movies = []
 
-        movies.getMovies();
+
+        function getMovies() {
+            return movies.getMovies()
+                .then( function(data) {
+                    vm.movies = data;
+                    console.log(vm.movies);
+                    return vm.movies;
+                });
+        }
+
+        getMovies();
+        
     }
 
 

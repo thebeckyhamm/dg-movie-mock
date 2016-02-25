@@ -6,7 +6,7 @@
         .factory('movies', movies);
 
     function movies($http) {
-        
+
         var service = {
             getMovies: getMovies
         }
@@ -20,7 +20,7 @@
                 .catch( getMoviesFailed );
 
             function getMoviesDone(response) {
-                console.log( response.data.Search );
+                return response.data.Search;
             }
 
             function getMoviesFailed(error) {
