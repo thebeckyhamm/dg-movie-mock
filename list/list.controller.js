@@ -7,9 +7,10 @@
         .controller('ListController', ListController);
 
 
-    function ListController($scope) {
+    function ListController(movies) {
         var vm = this;
-        vm.hello = "world"; 
+
+        movies.getMovies();
     }
 
 
