@@ -420,14 +420,15 @@ h1, h2, h3, h4, h5 {
 
 .media__img {
   float: left;
-  padding: 0 1rem 1rem 0;
-  width: 20%; }
+  padding: 0 1rem 0 0;
+  width: 25%; }
   .media__img img {
-    border-radius: 8px; }
+    border-radius: 8px;
+    max-width: 100%; }
 
 .media__content {
   float: left;
-  width: 80%; }
+  width: 75%; }
 
 .media__title {
   border-bottom: 1px solid #61696E;

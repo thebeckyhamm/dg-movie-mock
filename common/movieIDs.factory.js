@@ -14,7 +14,7 @@
 
         return service;
 
-
+        // makes initial call and puts IDs into an array
         function getMovieIDs() {
             return $http.get(url + '?s=Batman')
                 .then( getMoviesDone )

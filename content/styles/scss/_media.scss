@@ -4,16 +4,17 @@
 
 .media__img {
     float: left;
-    padding: 0 1rem 1rem 0;
-    width: 20%;
+    padding: 0 1rem 0 0;
+    width: 25%;
     img {
         border-radius: 8px;
+        max-width: 100%;
     }
 }
 
 .media__content {
     float: left;
-    width: 80%;
+    width: 75%;
 }
 
 .media__title {

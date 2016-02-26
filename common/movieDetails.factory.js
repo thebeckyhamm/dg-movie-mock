@@ -15,7 +15,7 @@
         return service;
 
 
-
+        // takes IDs, iterates, and waits for them to finish before returning
         function getMovieDetails(data) {
 
             var movieDetails = [];

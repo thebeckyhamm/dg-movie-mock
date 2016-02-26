@@ -30,22 +30,23 @@
                     console.log(result);
                     vm.movies = result;
                     toggleFilter(2000);
+                    addPoster();
                 })
         }
 
-        getMovies();
-
-        function filterMovies() {
+        function addPoster() {
             _.each(vm.movies, function(m, i) {
-                if ( parseInt(m.Year) >= 2000 ) {
 
-                    vm.filteredMovies.push(m);
+                var posterPieces = m.Poster.split("/");
+                var len = posterPieces.length;
+                var posterName = posterPieces[len - 1];
+                m.posterName = "content/images/" + posterName;
 
-                }
             });
-            console.log(vm.filteredMovies);
         }
 
+
+        // not the cleanest way 
         function toggleFilter(year) {
             vm.filteredMovies = [];
 
@@ -71,6 +72,9 @@
             });
 
         }
+
+        getMovies();
+
 }
 
 
